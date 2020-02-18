@@ -2,6 +2,9 @@ How to profile Tensorflow Lite on Android
 =========================================
 
 * Building profiling binary
+  These instructions assume you are running macOS Catalina (ver. 10.15.2)
+  In sublists are shown exact versions of libraries/packages which work.
+
   1. Go to tensorflow_src source folder
      ```sh
      cd tensorflow_src
@@ -11,7 +14,7 @@ How to profile Tensorflow Lite on Android
      git checkout r2.1
      ```
   3. Install/use appropriate bazel from https://github.com/bazelbuild/bazel/releases
-     ..* r2.1 == bazel 0.29.1
+      * r2.1 == bazel 0.29.1
 
   4. Install/use android-studio
      ```sh
@@ -64,23 +67,3 @@ How to profile Tensorflow Lite on Android
       cp bazel-bin/tensorflow/lite/tools/benchmark/benchmark_model ../benchmark_builds
       ```
 
-* Running profiling binary
-  1. Available built binaries are in "benchmark_builds"
-
-  2. Copy binary to device and make executable
-     ```sh
-     adb push benchmark_builds/benchmark_model_9.0
-     adb shell chmod +x /data/local/tmp/benchmark_model
-     ```
-
-  3. Copy model definition to device
-     ```sh
-     adb push deeplab_257.tflite /data/local/tmp
-     ```
-
-  4. Run the benchmark
-     ```sh
-     adb shell /data/local/tmp/benchmark_model \
-     --graph=/data/local/tmp/deeplab_257.tflite \
-     --num_threads=4
-     ```
