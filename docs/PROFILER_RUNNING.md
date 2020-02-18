@@ -1,11 +1,12 @@
 Running profiling binary
 ==========================
 
-  1. Available profiler binaries are in "benchmark_builds"
+  1. Available profiler binaries are in "profiler_builds"
+
 
   2. Copy binary to device and make executable
      ```sh
-     adb push benchmark_builds/benchmark_model_9.0
+     adb push profiler_builds/benchmark_model_9.0
      adb shell chmod +x /data/local/tmp/benchmark_model
      ```
 
