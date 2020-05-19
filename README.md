@@ -1,6 +1,6 @@
 Android benchmarks
 ==================
-This repository contains some benchmarks of ASR models. If you need to run the profiler
+This repository contains the profiler for TFLite models. If you need to run the profiler
 clone with 
 ```sh
 git clone https://github.com/qbit-/android_tflite_benchmarks.git
