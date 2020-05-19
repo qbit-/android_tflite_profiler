@@ -1,14 +1,13 @@
-Android benchmarks
-==================
-This repository contains the profiler for TFLite models. If you need to run the profiler
-clone with 
+Android TFLite profiler
+=======================
+This repository contains the builds of the official Tensorflow profiler for TFLite models and instructions to build it. If you need to run the profiler clone with 
 ```sh
-git clone https://github.com/qbit-/android_tflite_benchmarks.git
+git clone https://github.com/qbit-/android_tflite_profiler.git
 ```
 and use binaries for your Android version. Android version means the lowest version supported by the 
-profiler. If you would like to compile the profiler in your system clone with
+profiler. If you would like to compile the profiler on your system clone with
 ```sh
-git clone --recursive https://github.com/qbit-/android_tflite_benchmarks.git
+git clone --recursive https://github.com/qbit-/android_tflite_profiler.git
 ```
 and follow the instructions in [PROFILER_BUILDING.md](https://github.com/qbit-/android_tflite_benchmarks/blob/master/docs/PROFILER_BUILDING.md)
 ### Repository contents
